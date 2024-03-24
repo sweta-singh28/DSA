@@ -1,31 +1,30 @@
 #include<iostream>
+#include<limits.h>
 using namespace std;
 
-//Row wise sum
-
-void printRowWiseSum(int arr[][3], int rows, int cols){
-    cout<<"Row wise sum is: "<<endl;;
-    for (int i = 0; i <rows; i++)
+int getMax(int arr[][3], int rows, int cols){
+    int maxi = INT_MIN;
+    for (int i = 0; i < rows; i++)
     {
-         int sum = 0;
-        for (int j= 0; j < cols; j++)
+        for (int j = 0; j < cols; j++)
         {
-            sum += arr[i][j];
+            if(arr[i][j] > maxi){
+                maxi = arr[i][j];
+            }
         }
-        cout<<sum<<endl;
         
     }
+    return maxi;
     
-
 }
 
-int main(){
 
+int main(){
     int arr[3][3];
     int rows = 3;
     int cols = 3;
 
-    //row wise input
+    //taking input
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
@@ -35,7 +34,8 @@ int main(){
         
     }
 
-    //printing 
+    //Printing the rows and columns
+    cout<<"Enter:"<<endl;
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
@@ -45,9 +45,8 @@ int main(){
         cout<<endl;
     }
 
-    printRowWiseSum(arr, rows, cols);
+    cout<<"Maximum number is: "<<getMax(arr, rows, cols);
     
     
-
     return 0;
 }
