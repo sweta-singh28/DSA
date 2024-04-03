@@ -44,7 +44,7 @@ int binarySearch(vector<int>arr, int target){
 
 int main(){ 
 
-    vector<int>arr{30,40,2,50,60,9,6};
+    vector<int>arr{10,3,40,20,50,80,70};
     int target = 40;
 
     int finalAnswer = binarySearch(arr, target);
