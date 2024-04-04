@@ -1,4 +1,4 @@
-//Finf an element in an array
+//Find an element in an array
 
 #include <iostream>
 using namespace std;
