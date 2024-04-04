@@ -16,7 +16,7 @@ int solve(vector<int>arr){
         }
 
 
-        //2 cased-> mid is even and mid is odd
+        //2 case-> mid is even and mid is odd
         if (mid%2 == 0)
         {
             if (arr[mid] == arr[mid+1])
