@@ -19,7 +19,7 @@ int findUniqueElement(vector<int>arr){
 int main(){ 
 
     int n;
-    cout<<"Enter the size of array: "<<endl;
+    cout<<"Enter the size of array:  "<<endl;
     cin>>n;
 
     vector<int>arr(n);
