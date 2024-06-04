@@ -31,7 +31,7 @@ int main(){
 
     }
     int UniqueElement = findUniqueElement(arr);
-    cout<<"Unique element in the array is: "<<UniqueElement<<endl;
+    cout<<"Unique element in the array is:  "<<UniqueElement<<endl;
     
     return 0;
 }
