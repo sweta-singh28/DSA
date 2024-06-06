@@ -14,7 +14,8 @@ int main(){
         int element = arr[i];
         for(int j=0; j<brr.size(); j++){
             if(element == arr[j]){
-                brr[j] = INT_MIN;
+                //can use break also!
+            brr[j] = INT_MIN;      
                 ans.push_back(element);
             }
         }
