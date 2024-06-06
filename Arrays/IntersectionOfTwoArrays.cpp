@@ -13,7 +13,6 @@ int main(){
     for (int i = 0; i < arr.size(); i++)
     {
         int element = arr[i];
-
         //for every element, run loop on brr
         for (int j = 0; j < brr.size(); j++)
         {
