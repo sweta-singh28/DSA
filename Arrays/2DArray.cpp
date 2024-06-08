@@ -18,7 +18,7 @@ int main(){
         cout<<brr[0][2]<<endl;
         cout<<brr[1][0]<<endl;
         cout<<brr[1][3]<<endl;
-        cout<<brr[1][3]<<endl;
+        cout<<brr[1][2]<<endl;
 
 
 
