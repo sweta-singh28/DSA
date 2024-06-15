@@ -15,6 +15,7 @@ int firstOccurence(vector<int>v, int target){
         {
             //ans store
             ans = mid;
+            //search the last occ in left side
             e = mid - 1;
         }
         else if (target < v[mid])
