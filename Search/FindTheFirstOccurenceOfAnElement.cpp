@@ -40,7 +40,12 @@ int main(){
     int target = 4;
     int indexOfFirstOcc = firstOccurence(v, target);
 
-    cout<<"The answer is: "<<indexOfFirstOcc<<endl;
+    if(indexOfFirstOcc == -1){
+        cout<<"Element is not present"<<endl;
+    }
+    else{
+        cout<<"Element is found at index: "<<indexOfFirstOcc<<endl;
+    }
 
 
     //Using function
