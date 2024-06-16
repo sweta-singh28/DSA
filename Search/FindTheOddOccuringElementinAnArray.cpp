@@ -55,7 +55,7 @@ int main(){
 
     int finalAnswer = solve(arr);
     cout<<"The index is: "<<finalAnswer<<endl;
-    cout<<"The value id: "<<arr[finalAnswer]<<endl;
+    cout<<"The value is: "<<arr[finalAnswer]<<endl;
 
 
     return 0;
