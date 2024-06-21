@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 #include<cstring>
+
 using namespace std;
 
 
@@ -31,23 +32,22 @@ int main(){
     
     //to find substring    (vvimpt)
     cout<<str.substr(0,6)<<endl;
+
+    //returns the index of target find()
+    string sentence = "My name is sweta singh";
+    string target = "sweta";
+    cout<<sentence.find(target)<<endl;
     
-    //comparision of two string
-    //(a.compare(b) ->returns 0 if two string are excatly equal
-    string a = "swetaaa";
-    string b = "singhhhh";
+    //replce()
+    string str1 = "My name is sweta";
+    string word = "your";
+    str1.replace(0,2,word);
+    cout<<str1<<endl;
     
-    if(a.compare(b) == 0){
-        cout<<"a and b is exactly same strings."<<endl;
-    }
-    else{
-        cout<<"a and b are not same."<<endl;
-    }
-    
-    
-    
-    
-   
+    //erase()
+    string str2= "AEJNCUIHNCBVIUCBCRC";
+    str2.erase(0, 4);
+    cout<<str;
 
     
     return 0;
