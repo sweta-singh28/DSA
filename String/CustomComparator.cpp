@@ -11,6 +11,8 @@ bool cmp(char first, char second){
 bool compare(int a, int b){
     //a<b = for ascending order
     //a>b = for descending order 
+    cout<<"First Number: "<<a;
+    cout<<" Second Number: "<<b<<endl<<endl;
     return a>b;
 }
 
@@ -19,6 +21,7 @@ int main() {
     string s = "sweta";
     
     //lexographical order
+    //it depends on sorting algo which two numbers will compared first
     sort(s.begin(), s.end(), cmp);
     cout<<s <<endl;
     
