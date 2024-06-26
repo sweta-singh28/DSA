@@ -24,6 +24,15 @@ int main() {
 
 
 
+  //NULL POINTER
+  int *ptr = 0;
+  int *ptr = nullptr;
+  
+
+  cout<<*ptr<<endl;
+
+
+
 
 
 
