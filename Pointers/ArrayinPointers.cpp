@@ -34,6 +34,10 @@ int main() {
   cout<<*(arr+i)<<endl;
   cout<<*(i+arr)<<endl;
 
+  //arr = arr + 2;
+  int *p = arr;
+  p = p + 2;//accesssing the subpart of an array
+
 
 
 
