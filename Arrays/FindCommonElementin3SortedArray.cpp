@@ -10,11 +10,14 @@ void findCommon(vector<int> a, vector<int> b, vector<int> c) {
             i++;
             j++;
             k++;
-        } else if (a[i] < b[j]) {
+        } 
+        else if (a[i] < b[j]) {
             i++;
-        } else if (b[j] < c[k]) {
+        } 
+        else if (b[j] < c[k]) {
             j++;
-        } else {
+        } 
+        else {
             k++;
         }
     }
