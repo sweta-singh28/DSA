@@ -1,3 +1,24 @@
+//A. Break the array (single element)
+//B. Sort the left side using recursion (RE) call
+//C. sort the right side using recursion (RE) call
+//D. Merge left and right or two sorted array
+
+
+//Step1---> MergeSort(){
+//         -Break thhe array
+//         - Sort left and right part using recursion
+//         left--> MergeSort(arr, s, mid+1)   (for left side)
+//         right---> MergeSort(arr, mid+1, e)  (for right side)
+//}
+//step2----> Merge(){
+//         -length of two array len1 and len2
+//         -Create two new arrays left and right
+//         -Copy the values of left side of the main array in new left array of length len1
+//         -Copy the values of right side pf the main array in right array of length len2
+//         -Copy the left elements(of left and right arrays) in main array
+//}
+
+
 #include <iostream>
 using namespace std;
 
