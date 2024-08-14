@@ -43,7 +43,9 @@ int partition(int arr[], int s, int e){
     int j = e;
 
     while(i<pivotIndex && j>pivotIndex){
-        while(arr[i] <= pivotElement){
+        //yaha pe = sign isliye kyu ki possible ki array m eqal elements v ho
+        //for that reason = wala case apan idhr sambhal rhe
+        while(arr[i] <= pivotElement){ //= sign
             i++;
         }
 
