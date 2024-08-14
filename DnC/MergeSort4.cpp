@@ -1,73 +1,64 @@
 #include <iostream>
 using namespace std;
+//merge sort
 
-void mergeTwoSortedArrays(int* arr, int s, int e){
+void merge(int* arr, int s, int e){
     int mid = s+(e-s)/2;
     
-    //length of left sub array 
-    int len1 = mid -s+1;
-    //length of right sub array 
-    //        e-(mid+1)+1 ===> e-mid   (mid+1 cause the right                                   //subarray starts from mid+1)
+    //the length of both the array
+    int len1 = mid-s+1;
     int len2 = e-mid;
     
-    //create a new array left of length len1  
+    //Create two new arrays of length len1 and len2
     int* left = new int[len1];
-    //Create a new array right of length len2
     int* right = new int[len2];
     
-    //copy logic
-    //copy the left side elements in left array
+    //copy the elements from the main array to newly created arrays 
     int k = s;
     for(int i=0; i<len1; i++){
         left[i] = arr[k];
         k++;
     }
-    //copy the right side elemnts in right array
+    
     k = mid+1;
     for(int i=0; i<len2; i++){
         right[i] = arr[k];
         k++;
     }
     
-    //Now merge both the arrays
+    
+    //now merge both the arrays
     int leftIndex = 0;
     int rightIndex = 0;
     int mainArrayIndex = s;
     
-    
     while(leftIndex<len1 && rightIndex<len2){
         if(left[leftIndex] < right[rightIndex]){
-            arr[mainArrayIndex] = left[leftIndex];
-            mainArrayIndex++;
-            leftIndex++;
+            arr[mainArrayIndex++] = left[leftIndex++];
         }
         else{
-            arr[mainArrayIndex] = right[rightIndex];
-            mainArrayIndex++;
-            rightIndex++;
+            arr[mainArrayIndex++] = right[rightIndex++];
         }
     }
     
-
-    //After all comparision
-    //Copy the left elements in the main array from left array
+    //Now copy the left elements 
     while(leftIndex<len1){
         arr[mainArrayIndex++] = left[leftIndex++];
     }
-    //copy the left elements int the main array from the right array
-    while(rightIndex< len2){
-        arr[mainArrayIndex++] = right[rightIndex++];
-    }
     
+    while(rightIndex<len2){
+        arr[mainArrayIndex++] = right[rightIndex++]; 
+    }
     
 }
 
+
 void mergeSort(int* arr, int s, int e){
     //base case
-    //s==e ----> single elemement
+    //s==e ---> single element
     //s>e ----->Invalid array
     if(s>=e){
-        return;
+        return ;
     }
     
     int mid = s+(e-s)/2;
@@ -77,14 +68,15 @@ void mergeSort(int* arr, int s, int e){
     //RE call for right side
     mergeSort(arr, mid+1, e);
     
-    //call a fucntion to merege both the sorted arrays
-    mergeTwoSortedArrays(arr, s, e);
+    //Call merge function to merge the two sorted array
+    merge(arr, s, e);
+    
 }
 
 
 int main() {
-    int arr[] = {23,4,66,8,91};
-    int n = 5;
+    int arr[] = {2,6,8,9,3,4,5};
+    int n = 7;
     
     int s = 0;
     int e = n-1;
@@ -97,6 +89,9 @@ int main() {
         cout<<arr[i]<<" ";
     }
     cout<<endl;
+    
+    
+
 
     return 0;
 }
