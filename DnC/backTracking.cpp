@@ -4,7 +4,7 @@ using namespace std;
 //Print all the possible combination of abc
 
 void printPermutation(string& str, int i){
-                      //pass by reference
+                     //pass by reference
     //base case
     if(i>=str.length()){
         cout<<str<<" ";
