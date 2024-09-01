@@ -15,7 +15,7 @@ using namespace std;
 
 int partition(int arr[], int s, int e){
     //partion logic
-    //step 1: chooooose pivot element
+    //step 1: choose pivot element
     int pivotIndex = s; //first element is pivotElement
     int pivotElement = arr[s];
 
