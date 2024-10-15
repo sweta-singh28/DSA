@@ -13,7 +13,7 @@ int main(){
     //0-> not found
     //1->found
 
-    for (int i = 0; i < size; i++)
+    for(int i = 0; i < size; i++)
     {
         if (arr[i] == key)
         {
