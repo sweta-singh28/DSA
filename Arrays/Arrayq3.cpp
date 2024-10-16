@@ -9,7 +9,7 @@ int main(){
     int start = 0;
     int end = size - 1;
 
-    while (true)
+    while (start<=end)
     {
         if (start>end)
             break;

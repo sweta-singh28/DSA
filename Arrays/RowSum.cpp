@@ -7,7 +7,7 @@ void printRowWiseSum(int arr[][3], int rows, int cols){
     cout<<"Row wise sum is: "<<endl;;
     for (int i = 0; i <rows; i++)
     {
-         int sum = 0;
+        int sum = 0;
         for (int j= 0; j < cols; j++)
         {
             sum += arr[i][j];
