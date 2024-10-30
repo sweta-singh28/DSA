@@ -8,6 +8,7 @@ void printSubsequences(string str, string output, int i){
         return;
     }
     
+    
 
     //exclude
     printSubsequences(str, output , i+1);
