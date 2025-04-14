@@ -9,7 +9,7 @@ int main(){
     {    //space
         for (int col=0; col<n-row-1; col++)
         {
-            cout<<"   ";
+            cout<<"  ";
         }
         //stars
         for (int col=0; col<2*row+1; col++)

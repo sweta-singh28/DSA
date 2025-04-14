@@ -3,8 +3,6 @@
 using namespace std;
 
 //Positioning Method
-
-
 int findDuplicate(vector<int>nums){
     while (nums[0] != nums[nums[0]])
     {

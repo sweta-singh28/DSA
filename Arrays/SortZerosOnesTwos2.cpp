@@ -7,7 +7,6 @@ using namespace std;
 int main(){
     vector<int>arr{0,1,0,1,2,1,2,1,0,2,0};
 
-    int size = 11;
     int low = 0;
     int mid = 0;
     int high = arr.size() - 1;

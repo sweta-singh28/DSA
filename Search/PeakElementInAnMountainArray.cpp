@@ -16,9 +16,10 @@ int findPeakIndex(vector<int>arr){
             s = mid+1;
         }
         else{
-             e = mid;
+            e = mid;
         }
-         mid = s +(e-s)/2;
+        
+        mid = s +(e-s)/2;
         
     }
     return s;
