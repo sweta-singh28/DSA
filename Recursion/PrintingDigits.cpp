@@ -8,7 +8,7 @@ void printDigits(int n){
         return;
     }
     
-    //function call (recusive relation)
+    //function call (recursive relation)
     printDigits(n/10);
     
     //solve 1 case

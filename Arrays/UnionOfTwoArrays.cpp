@@ -13,7 +13,7 @@ int main(){
     vector<int> ans;
 
 
-    //pusing all the element of vector arr
+    //pushing all the element of vector arr
     for (int i = 0; i < sizea; i++)
     {
         ans.push_back(arr[i]);
