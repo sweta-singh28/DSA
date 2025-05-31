@@ -5,8 +5,8 @@ using namespace std;
 
 int main(){
     
-    vector<int>arr = {1,2,5,3,6,-1};
-    vector<int>brr = {9,6,5,8,1,2,3,-1};
+    vector<int>arr = {1,2,5,3,6,-1,2};
+    vector<int>brr = {9,6,5,8,1,2,3,-1,2};
     
     vector<int>ans;
     
