@@ -16,7 +16,7 @@ int removeDuplicate(vector<int>&arr){
 
 }
 int main(){
-    vector<int>arr{1,1,2,2,3,3,4,4,4};
+    vector<int>arr{1,1,2,2,3,3,4,4,4,4};
 
     int finalAns = removeDuplicate(arr);
     for(int i=0; i<finalAns; i++){
