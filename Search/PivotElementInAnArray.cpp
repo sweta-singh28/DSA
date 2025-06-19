@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-//search in soretd and rotated array
+//search in sorted and rotated array
 
 
 int findPivot(vector<int>arr){
@@ -15,7 +15,7 @@ int findPivot(vector<int>arr){
     {
         if (e == s)
         {
-            //single eleement in an array
+            //single element in an array
             return s;
         }
         if (mid <= e && arr[mid] > arr[mid+1])
