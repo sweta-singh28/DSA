@@ -20,7 +20,7 @@ bool compare(int a, int b){
 int main() {
     string s = "sweta";
     
-    //lexographical order
+    //lexicographical order
     //it depends on sorting algo which two numbers will compared first
     sort(s.begin(), s.end(), cmp);
     cout<<s <<endl;

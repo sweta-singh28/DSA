@@ -23,7 +23,7 @@ int main(){
 
 
     //comparision of two string
-    //(a.compare(b) ->returns 0 if two string are excatly equal
+    //(a.compare(b) ->returns 0 if two string are exactly equal
     
     string a = "swetaaa";
     string b = "singhhh";

@@ -35,7 +35,7 @@ bool validPalindrome(string s){
 
 
 int main(){
-    //Valind palindrome
+    //Valid palindrome
     string s = "aba";
     
     cout<<validPalindrome(s)<<endl;

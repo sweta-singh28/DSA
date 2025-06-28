@@ -1,11 +1,7 @@
 #include<iostream>
 #include<string>
 #include<cstring>
-
 using namespace std;
-
-
-
 int main(){
     //string create
     string str;

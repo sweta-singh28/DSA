@@ -15,12 +15,12 @@ int reverseString(char name[]){
     }
     
     //usig for loop
-    for(; i<=j;){
-        swap(name[i], name[j]);
-        i++;
-        j--;
+    // for(; i<=j;){
+    //     swap(name[i], name[j]);
+    //     i++;
+    //     j--;
         
-    }
+    // }
     
     
     
