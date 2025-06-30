@@ -17,12 +17,6 @@ int main() {
   double*dtr = &d;
   cout<<sizeof(dtr)<<endl;
 
-  
-
-  
-
-
-
 
 
   

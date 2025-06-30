@@ -5,6 +5,7 @@ using namespace std;
 int main() {
     int a = 5;
     int* p = &a;
+    
     int** q = &p;
     
     cout<<a<<endl; //data at a
@@ -18,7 +19,6 @@ int main() {
     cout<<&q<<endl; //address of q
 
 
-    
     
 
     return 0;

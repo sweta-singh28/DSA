@@ -2,7 +2,10 @@
 using namespace std;
 
 void solve(int arr[10]){
-  cout<<"Size inside the solve function: "<<sizeof(arr)<<endl; //prints the size of the pointer 8
+  //it always passes a pointer not the array
+  
+  //pass by reference
+  cout<<"Size inside the solve function: "<<sizeof(arr)<<endl; //prints the size of the pointer 8 or 4
   cout<<"arr: "<< arr <<endl; //prints the address of the pointer
   cout<<"&arr: "<<&arr<<endl; //prints the address of the arr
  

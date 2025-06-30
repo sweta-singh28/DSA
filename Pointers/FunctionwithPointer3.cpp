@@ -17,7 +17,7 @@ int main() {
 
   update(p,q);
 
-  //printing the array agin
+  //printing the array again
   cout<<endl<<endl<<"Printing array after calling update function"<<endl;
   for(int i=0; i<4; i++){
     cout<<arr[i]<<" "<<endl;

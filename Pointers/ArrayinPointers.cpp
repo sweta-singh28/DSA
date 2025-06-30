@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-  int arr[4] = {12, 45, 4, 14};
+  int arr[4] = {12, 44, 16, 18};
 
 
   //cout<<arr<<endl; //base address
@@ -20,23 +20,24 @@ int main() {
   cout<<arr[0]<<endl; //0 index
   cout<<*arr + 1<<endl; //12 + 1
   cout<<*(arr) + 1<<endl; // 12+1
-  cout<<*(arr + 1)<<endl; //45
+  cout<<*(arr + 1)<<endl; //44
   cout<<arr[1]<<endl; //1 index
-  cout<<*(arr + 2)<<endl; //4
+  cout<<*(arr + 2)<<endl; //16
   cout<<arr[2]<<endl; //2 index
   cout<<*(arr + 3)<<endl; //14
   cout<<arr[3]<<endl; //3 index
 
 
   int i = 0;
-  cout<<arr[i]<<endl; 
-  cout<<i[arr]<<endl;
-  cout<<*(arr+i)<<endl;
-  cout<<*(i+arr)<<endl;
+  cout<<arr[i]<<endl;  //12
+  cout<<i[arr]<<endl;  //12
+  cout<<*(arr+i)<<endl; //12
+  cout<<*(i+arr)<<endl;  //12
 
-  //arr = arr + 2;
+
+  //arr = arr + 2; //error
   int *p = arr;
-  p = p + 2;//accesssing the subpart of an array
+  p = p + 2;//accessing the subpart of an array
 
 
 
