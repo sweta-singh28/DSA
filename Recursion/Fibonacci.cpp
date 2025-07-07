@@ -1,8 +1,9 @@
 #include <iostream>
 using namespace std;
+//n is 1 & 2 cause we want to print the series from  0.
 int fib(int n){
     //base case
-    if(n==1){
+    if(n==1){ 
         return 0;
     }
     if(n==2){
@@ -19,7 +20,7 @@ int main() {
     cin>>n;
     
     int ans = fib(n);
-    cout<<"The "<<n<<" term is: "<<ans<<endl;
+    cout<<"The "<<n<<"th term is: "<<ans<<endl;
 
     return 0;
 }

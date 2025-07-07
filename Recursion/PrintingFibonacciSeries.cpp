@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// print fibinacci series using recursion
+// print fibonacci series using recursion
 int fib(int n){
     //base case
     if(n == 0){

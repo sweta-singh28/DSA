@@ -2,6 +2,7 @@
 #include<vector>
 using namespace std;
 //WAP to calculate the factorial of a given number.
+
 int factorial(int n){
     //base case
     if(n==1){

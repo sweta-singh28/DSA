@@ -18,6 +18,7 @@ void printDigits(int n){
 }
 
 
+
 int main() {
     int n;
     cout<<"Enter number: "<<endl;
