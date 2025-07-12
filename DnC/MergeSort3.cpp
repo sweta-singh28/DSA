@@ -22,7 +22,7 @@ void mergeTwoSortedArrays(int* arr, int s, int e){
         left[i] = arr[k];
         k++;
     }
-    //copy the right side elemnts in right array
+    //copy the right side elements in right array
     k = mid+1;
     for(int i=0; i<len2; i++){
         right[i] = arr[k];
@@ -64,7 +64,7 @@ void mergeTwoSortedArrays(int* arr, int s, int e){
 
 void mergeSort(int* arr, int s, int e){
     //base case
-    //s==e ----> single elemement
+    //s==e ----> single element
     //s>e ----->Invalid array
     if(s>=e){
         return;

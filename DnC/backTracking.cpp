@@ -17,7 +17,7 @@ void printPermutation(string& str, int i){
         //Recursion call
         printPermutation(str, i+1);
         
-    //BackTrcaking ----> To recreate the original input string
+    //Backtrcaking ----> To recreate the original input string
         swap(str[i], str[j]);
     }
 }

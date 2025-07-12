@@ -5,7 +5,7 @@
 
 
 //Step1---> MergeSort(){
-//         -Break thhe array
+//         -Break the array
 //         - Sort left and right part using recursion
 //         left--> MergeSort(arr, s, mid+1)   (for left side)
 //         right---> MergeSort(arr, mid+1, e)  (for right side)
