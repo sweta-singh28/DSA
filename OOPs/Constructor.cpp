@@ -23,14 +23,14 @@ class Animal{
     //Parametrised Constructor
     Animal(int age){
         this->age = age;
-        cout<<"Parametrised Constructor called."<<endl;
+        cout<<"Parameterized Constructor called."<<endl;
     }
     
     //passing 2 parameters
     Animal(int age, int weight){
         this->age = age;
         this->weight = weight;
-        cout<<"Parametrised Constructor  2 called."<<endl;
+        cout<<"Parameterized Constructor  2 called."<<endl;
     }
     
     //Passing 3 parameters
@@ -38,7 +38,7 @@ class Animal{
         this->age = age;
         this->weight = weight;
         this->name = name;
-        cout<<"Parametrised Constructor 3 called."<<endl;
+        cout<<"Parameterized Constructor 3 called."<<endl;
     }
 
     //Copy Constructor

@@ -36,7 +36,7 @@ int main(){
     Node* first = new Node(10);
     Node* Second = new Node(20);
     Node* third = new Node(30);
-    Node* fourth = new Node(40);
+    Node* fourth = new Node(70);
     Node* fifth = new Node(50);
 
 
