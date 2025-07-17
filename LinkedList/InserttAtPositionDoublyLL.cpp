@@ -107,17 +107,22 @@ void insertAtPosition(int data, int position, Node* &head, Node* &tail){
         head = newNode;
         tail = newNode;
     }
-    //step 1: find the position   (previous pointer and current pointer)
+    
+    //if we want to insert at 0th index then call insertAtHead()
     if(position == 0){
         insertAtHead(head, tail, data);
         return;
     }
 
+    //if we want to insert at last then call insertAtTail()
     int len = findLength(head);
     if(position >= len){
         insertAtTail(head, tail, data);
         return;
     }
+
+    //insertion at middle
+    //step 1: find the position   (previous pointer and current pointer)
     int i = 1;
     Node* prev = head;
     while (i<position)

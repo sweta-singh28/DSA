@@ -22,23 +22,25 @@ void print(Node* head){
     }
 }
 
-Node* getMiddle(Node* &head){
+Node* deleteMiddleNode(Node* &head){
     //LL is empty
     if(head == NULL)
     {
-        cout<<"LL is empty."<<endl;
-        return head;
+        delete head;
+        return NULL;
     }
 
     //Only 1 node in LL
     if (head->next == NULL)
     {
-        return head;
+        delete head;
+        return NULL;
     }
 
     //LL have more than 1 node
     Node* slow = head;
     Node* fast = head;
+    Node* prev = NULL;
     
     //fast - 2 times move
     //slow - 1 times move
@@ -47,10 +49,14 @@ Node* getMiddle(Node* &head){
         fast = fast->next;
         if(fast != NULL){
             fast = fast->next;
+            prev = slow;
             slow =slow->next;
         }
     }
-    return slow;
+    prev->next = slow->next;
+    delete slow;
+
+    return head;
     
 }
 
@@ -73,7 +79,11 @@ int main(){
     print(head);
     cout<<endl;
 
-    cout<<"The middle Node is: "<<getMiddle(head)->data<<endl;
+    
+
+    deleteMiddleNode(head);
+    cout<<"Deleted Middle Node"<<endl;
+    print(head);
 
 
 

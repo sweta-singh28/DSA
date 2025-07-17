@@ -1,11 +1,3 @@
-//DETECT AND DELETE LOOP   (impt)
-    //1. Check loop is present or not in LL
-    //2. Find starting point of loop
-    //3. Remove Loop
-
-
-
-
 #include<iostream>
 using namespace std;
 class Node{
@@ -17,44 +9,58 @@ class Node{
         this->data = data;
         this->next = NULL;
     }
+
 };
+
 
 void print(Node* &head){
     Node* temp = head;
     while(temp != NULL){
         cout<<temp->data<<" ";
         temp = temp->next;
+
     }
+
 }
 
-
-bool CheckForLoop(Node* &head){
+Node* removeLoop(Node* &head){
     //LL is empty
     if(head == NULL){
-        cout<<"LinkedList is empty."<<endl;
-        return false;
+        cout<<"Linked List is empty"<<endl;
+        return NULL;
     }
-    Node* slow = head;
-    Node* fast = head;
 
-    while (fast != NULL)
-    {
+    //LL is non empty
+    Node* fast = head;
+    Node* slow = head;
+
+    while(fast != NULL && fast->next != NULL){
         fast = fast->next;
         if(fast != NULL){
             fast = fast->next;
             slow = slow->next;
         }
+
+        //1st meet up of fast nd slow
         if(fast == slow){
-            //loop is present
-            return true;
+            slow = head;
+            break; 
         }
+
     }
-    //Fast is NULL which means loop is absent
-    return false;
-    
+
+    Node* prev = fast;
+
+    while(slow != fast){
+        prev = fast;
+        slow = slow->next;
+        fast = fast->next;
+    }
+    prev->next = NULL;
+    //return slow;
+
+
 }
-
-
 
 int main(){
     Node* head = new Node(10);
@@ -75,17 +81,15 @@ int main(){
     sixth->next = seventh;
     seventh->next = eighth;
     eighth->next = ninth;
-    ninth->next = fifth;     //here loop
-    
-    
-   // print(head);
+    ninth->next = fifth;
 
-    if(CheckForLoop(head) == false){
-        cout<<"Loop is absent."<<endl;
-    }
-    else{
-        cout<<"Loop is present."<<endl;
-    }
+    
+
+    removeLoop(head);
+    
+    cout<<"Printing the LL after removing the loop."<<endl;
+    print(head);
+
     
 
 

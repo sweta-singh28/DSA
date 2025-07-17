@@ -5,7 +5,6 @@
 
 
 
-
 #include<iostream>
 using namespace std;
 class Node{
@@ -27,32 +26,36 @@ void print(Node* &head){
     }
 }
 
-
 bool CheckForLoop(Node* &head){
     //LL is empty
     if(head == NULL){
-        cout<<"LinkedList is empty."<<endl;
-        return false;
+        cout<<"Linked List is empty"<<endl;
     }
-    Node* slow = head;
-    Node* fast = head;
 
-    while (fast != NULL)
-    {
+    //LL is non empty
+    Node* fast = head;
+    Node* slow = head;
+
+    while(fast != NULL){
         fast = fast->next;
         if(fast != NULL){
             fast = fast->next;
             slow = slow->next;
         }
+
+        //if fast nd slow is pointing the same node it means loop is present.
         if(fast == slow){
-            //loop is present
             return true;
         }
     }
-    //Fast is NULL which means loop is absent
+
+
+    //loop is not present
     return false;
-    
 }
+
+
+
 
 
 
@@ -78,7 +81,7 @@ int main(){
     ninth->next = fifth;     //here loop
     
     
-   // print(head);
+   // print(head); infinite loop
 
     if(CheckForLoop(head) == false){
         cout<<"Loop is absent."<<endl;

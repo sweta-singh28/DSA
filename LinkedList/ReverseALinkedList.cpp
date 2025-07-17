@@ -19,11 +19,6 @@ class Node{
 
     }
 
-    //TODO: Write a destructor to delete node
-    ~Node(){
-        cout<<"Node with value: "<<this->data<<" deleted"<<endl;
-    }
-
 };
 
 
@@ -49,9 +44,6 @@ void insertAtHead(Node* &head, Node* &tail, int data){       //&head by referenc
 
 }
 
-
-
-
 void print(Node* head){
     Node* temp = head;
 
@@ -60,11 +52,6 @@ void print(Node* head){
         temp = temp->next;
     }
 }
-
-
-
-
-
 
 Node* reverse(Node* &prev, Node* &curr){
     //base case
