@@ -10,12 +10,26 @@ int main(){
     st.push(20);
     st.push(50);
     st.push(30);
+    st.push(40);
+    st.push(555);
+    st.push(90);
 
 
-    //remove 30 from the top
+    //printing the stack
+    cout<<"Printing the stack: "<<endl;
+    while(!st.empty()){
+        cout<<st.top()<<" ";
+        st.pop();
+    }
+    cout<<endl;
+
+
+    //remove 90 from the top
+    st.pop();
+    //remove 555 from the top
     st.pop();
 
-    //check the element on top
+    //check the element on top 40
     cout<<"Element on top is: "<<st.top()<<endl;
  
     //check the size of stack

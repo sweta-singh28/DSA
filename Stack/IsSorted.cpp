@@ -9,6 +9,7 @@ void insertSorted(stack<int>&s, int target){
         return;
     }
 
+    //check the correct position to insert target
     if(s.top() >= target){
         s.push(target);
         return;

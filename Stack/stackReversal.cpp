@@ -2,10 +2,8 @@
 #include<stack>
 using namespace std;
 
-
-
 void insertAtBottom(stack<int>&s, int &target){
-     //base case
+    //base case
     if (s.empty())
     {
         s.push(target);
@@ -15,14 +13,36 @@ void insertAtBottom(stack<int>&s, int &target){
     int topElement = s.top();
     s.pop();
 
-    //Recursive call
+    //recursive call
     insertAtBottom(s, target);
 
-    //Backtracking
+    //backtracking
     s.push(topElement);
- 
-   
+    
+
 }
+
+
+void reverseStack(stack<int>& s){
+    //base case
+    if(s.empty()){
+        return;
+    }
+
+    int target = s.top();
+    s.pop();
+
+    //recursive call to reverse stack
+    reverseStack(s);
+
+    //insertAtBottom
+    insertAtBottom(s, target);
+
+
+}
+
+
+
 
 int main(){
     stack<int>s;
@@ -36,24 +56,21 @@ int main(){
     if(s.empty()){
         cout<<"Stack is empty. Cant insert at bottom"<<endl;
     }
-    
 
-    int target = s.top();
-    //remove the topmost element 50
-    s.pop();
    
 
-    insertAtBottom(s, target);
 
-    cout<<"Printing"<<endl;
+    reverseStack(s);
 
+    cout<<"Printing the reversed stack."<<endl;
     while (!s.empty())
     {
         cout<<s.top()<<" ";
         s.pop();
     }
-    cout<<endl;
-    
+
+
+
 
 
     return 0;

@@ -91,6 +91,7 @@ int main(){
         S.pop();
     }
     cout<<endl;
+    
 
     cout<<"Size of stack: "<<S.getSize();
 
