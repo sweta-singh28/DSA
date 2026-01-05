@@ -102,12 +102,6 @@ int main(){
         
         cout<<inversionCnt<<endl;
 
-
-
-
-
-
-    
     
     return 0;
 }

@@ -81,6 +81,8 @@ void merge(int*arr, int s, int e){
     }
      
     //TODO: delete left and right wala newly created array
+    delete[] left;
+    delete[] right;
     
     
 }

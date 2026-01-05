@@ -58,6 +58,10 @@ void mergeTwoSortedArrays(int* arr, int s, int e){
     while(rightIndex< len2){
         arr[mainArrayIndex++] = right[rightIndex++];
     }
+
+    //delete left nd right array
+    delete[] left;
+    delete[] right;
     
     
 }
@@ -89,6 +93,7 @@ int main() {
     int s = 0;
     int e = n-1;
     
+    //calling mergerSort function
     mergeSort(arr, s, e);
     
     //printing the array
