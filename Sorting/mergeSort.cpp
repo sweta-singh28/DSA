@@ -36,7 +36,7 @@ void merge(int* arr, int s, int e){
     int rightIndex = 0;
     int mainArrayIndex = s;
 
-    while(leftIndex<len1 && rightIndex<len2){
+    while(leftIndex < len1 && rightIndex < len2){
         if(left [leftIndex] < right [rightIndex]){
             arr[mainArrayIndex] = left[leftIndex];
             mainArrayIndex++;

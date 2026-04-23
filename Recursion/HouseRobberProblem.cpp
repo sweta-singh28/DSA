@@ -11,6 +11,7 @@ int rob(vector<int>& nums, int i){
   int robAmnt1 = nums[i] + rob(nums, i+2);
   int robAmnt2 = 0 + rob(nums, i+1);
 
+  //return maximum
   return max(robAmnt1, robAmnt2);
 
 
