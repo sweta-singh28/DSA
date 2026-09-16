@@ -81,14 +81,6 @@ int main(){
 
 
 
-    
-
-
-
-
-
-
-
 
     //Access modifiers 3 types in c++
     //public---> if a property or behaviour is public marked then we can access it inside the class and outside the class

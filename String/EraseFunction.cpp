@@ -2,7 +2,7 @@
 using namespace std;
 void eraseString(string&s, int position, int length){
     int n = s.length();
-    //check valid position bhai
+    //check valid position
     if(position <= 0 || position > s.length() || length <0){
         return;
     }

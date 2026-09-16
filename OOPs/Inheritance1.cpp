@@ -1,4 +1,4 @@
-/*
+/*  sab ek m daal diya maine idhar
 4 pillars of OOPs
 1)encapsulation
 2)inheritance
